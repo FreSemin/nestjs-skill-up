@@ -7,7 +7,7 @@ type TypeORMModulePostgresConnectionsOptions = TypeOrmModuleOptions &
   PostgresConnectionOptions;
 
 export class TypeORMConfig implements TypeOrmOptionsFactory {
-  createTypeORMOptions(): TypeORMModulePostgresConnectionsOptions {
+  createTypeOrmOptions(): TypeORMModulePostgresConnectionsOptions {
     const { name, host, port, username, password } = environment.database;
 
     return {
