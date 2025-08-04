@@ -7,6 +7,7 @@ async function bootstrap() {
 
   await app.listen(environment.app.port);
 }
-bootstrap().then(() => {
-  console.log(`App started ${environment.app.host}:${environment.app.port}`);
+
+void bootstrap().then(() => {
+  console.log(`App started on ${environment.app.host}:${environment.app.port}`);
 });
